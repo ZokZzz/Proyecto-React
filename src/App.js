@@ -1,7 +1,3 @@
-
-/*app.js*/
-
-
 import React, { useRef, useState, useEffect } from 'react';
 import './App.css';
 import Monstruo from './components/Mounstro';
