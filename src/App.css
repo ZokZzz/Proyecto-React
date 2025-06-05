@@ -1,0 +1,161 @@
+
+/*app.css*/
+
+
+
+@font-face {
+  font-family: 'DoomFont';
+  src: url('/public/fonts/AmazDooMLeftOutline.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'DoomFont', sans-serif;
+  background-image: url('/public/gif.webp');
+   cursor: url('/public/shotgun.cur'), auto;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  color: red; 
+}
+
+button, button:hover, button:focus {
+   cursor: url('/public/shotgun.cur'), auto;
+}
+
+
+h1 {
+  font-size: 4rem;
+  color: red;
+  text-shadow: 2px 2px black;
+  letter-spacing: 2px;
+  margin-bottom: 0.5rem;
+  text-align: center;
+}
+
+h3{
+color: #ff6666;
+  font-weight: bold;
+  letter-spacing: 2px;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  font-size: 2rem;
+}
+
+p {
+  font-size: 2.5rem;
+  color: red;
+  text-shadow: 2px 2px black;
+  margin-top: 0;
+   text-align: center;
+}
+
+.monstruos-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.audio-toggle {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: red;
+  border: 2px solid red;
+  font-size: 1.5rem;
+  padding: 5px 10px;
+  cursor: pointer;
+  z-index: 1000;
+  font-family: 'DoomFont', sans-serif;
+  border-radius: 5px;
+}
+
+.audio-toggle:hover {
+  background-color: red;
+  color: black;
+}
+
+.doom-footer {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: red;
+  padding: 10px 15px;
+  border: 1px solid red;
+  border-radius: 10px;
+  font-family: 'DoomFont', sans-serif;
+  font-size: 0.9rem;
+  text-shadow: 1px 1px black;
+  z-index: 1000;
+}
+
+.doom-footer a {
+  color: red;
+  text-decoration: none;
+}
+
+.doom-footer a:hover {
+  text-decoration: underline;
+}
+
+
+.github-link {
+  color: red;
+  text-decoration: none;
+  margin-left: 8px;
+   cursor: url('/public/shotgun.cur'), auto;
+}
+
+.github-link:hover {
+  text-decoration: underline;
+}
+
+.contenido-seleccionado {
+  padding: 2rem;
+  color: white;
+  background-color: #111;
+  border: 2px solid red;
+  border-radius: 10px;
+  margin: 2rem auto;
+  max-width: 600px;
+  text-align: center;
+  animation: aparecer 0.4s ease-in-out;
+}
+
+.contenido-gameplay {
+  padding: 2rem;
+  color: white;
+  background-color: #111;
+  border: 2px solid red;
+  border-radius: 10px;
+  margin: 2rem auto;
+  max-width: 800px;
+  text-align: center;
+  animation: aparecer 0.4s ease-in-out;
+}
+
+
+@keyframes aparecer {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.btn-volver {
+  font-family: 'DoomFont', sans-serif;
+  font-size: 1.5rem;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: red;
+  color: black;
+  border:  1px solid black;;
+  cursor: pointer;
+  font-weight: bold;
+  border-radius: 5px;
+}
